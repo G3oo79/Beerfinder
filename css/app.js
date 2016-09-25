@@ -26,21 +26,27 @@ var config = {
     messagingSenderId: "1039902569554"
 };
 firebase.initializeApp(config);
-//
-//click funtions for train schedule input
-$("#search").on("click", function() {
-  //capturing user inputs
-  /*var regionSelect = $('#region').val().trim(); */
-  //
-  /*var citySearch = $('#search').val().trim(); */
-  /*console.log("time=",$("#timeinput").val().trim());*/
-  alert("hello");
-});
+//Created variable and assigned fire.database.
+var database = firebase.database();
+ $(".submit").on("click", function() {
+  /*alert("hello");*/
+  var regionInput = $('#regioninput').val().trim(); 
+  alert("it works");
+  var cityInput = $('#cityinput').val().trim(); 
+  alert("yesss cityy");
+ });
+
+ 
+    
+ 
+
+    
 //map style and start location
-/*var map;
+$("#map").hide();
+var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7413549, lng: -73.9980244},
           zoom: 9
         });
-      }*/
+      }

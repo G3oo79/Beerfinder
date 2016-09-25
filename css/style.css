@@ -1,7 +1,7 @@
 body {
 	width: 100%;
 	height: 100%;
-	background-image: url(https://d3thflcq1yqzn0.cloudfront.net/025332112_prevstill.jpeg);
+	background-image: url(http://wallpaper.zone/img/36519.jpg);
 }
 
  #map {
@@ -10,6 +10,10 @@ body {
         /*background-color: grey;*/
 }
 
+h4 {
+	font-family: Sigmar One;
+	color: #471f0a;
+}
   /*#map {
     bottom:0px;
     height: 100%;
@@ -18,9 +22,10 @@ body {
     right: 0px;
 }*/
 
-.header {
+.card-panel {
+	background-image: url(http://en.academic.ru/pictures/enwiki/50/2009-03-21_Beer_brewing_bubbles.jpg);
 	font-family: Sigmar One;
-	color: #471f0a;
+	height: 100px;
 }
 
 
@@ -49,16 +54,8 @@ body {
 	/*text-shadow: 4px 4px 4px #aaa;*/
 }
 
-#bro {
-	font-family: Sigmar One;
-	font-size: 30px;
-	color: #471f0a;
-}
-
-#textarea1 {
-	padding: 11px;
-	color: #471f0a;
-
+.submit {
+	color: #632e0c;
 }
 
 #textarea2 {
@@ -73,9 +70,6 @@ body {
 	/*height: 300px;*/
 }
 
-#search {
-	color: #471f0a;
-}
 
 .closeicon {
 

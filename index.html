@@ -25,7 +25,7 @@
           href="https://fonts.googleapis.com/css?family=Tangerine|Modak|Sigmar One">
     </head>
 <body>
-	<nav class="card-panel teal transparent header">
+	<nav class="card-panel teal header">
 	    <div class="nav-wrapper" id="headwraper">
 	      <a href="#" class="brand-logo" style="color: #471f0a">HoPLIvIoN
 	     </a>
@@ -35,6 +35,7 @@
 	      </ul>
 	    </div>
 	</nav>
+	<!-- carousel -->
 	<div class="container">
 		<div class="carousel">
 		    <a class="carousel-item" href="#one!"><img class="img" src="http://www.iopp.org/images/IoPPNE-PIX/hp-featured-image.png"></a>
@@ -43,32 +44,56 @@
 		    <a class="carousel-item" href="#four!"><img class="img" src="http://worldartsme.com/images/blue-moon-beer-clipart-1.jpg"></a>
 		    <a class="carousel-item" href="#five!"><img class="img" src="http://www.brauunion.at/images/resized/assets/fileupload/biersorten/heineken%2Bglas_03_196x400.png"></a>
 	  	</div><br>
-		<div id="map"></div>  	
-
-		<br><div class="row">
-			<div class="input-field col l6"><br>
-			    <select class="transparent">
-			      <option value="" disabled selected>Choose your option</option>
-			      <option value="region" id="region">Search by State</option>
-			      <option value="locality" id="locality">By City</option>
-			      <!-- <option value="3"></option> -->
-			    </select>
-			    <label id="bro">Select here!!</label>
-		  	</div>
+		<div id="map">
+			<!-- this is where the map gets dumped -->
+		</div> 
+		<!-- First Input Fields -->
+		<div class="row">
+			<div class="col s6">
+				<label><h4>By Region</h4></label>
+			</div>
+			<div class="col s6">
+				<label><h4>By City</h4></label>
+			</div>
+		</div> <!-- End of First Input fields -->
+		<div class="row"><!-- Start Second input Field -->
 			<div class="input-field col s6">
-	          	<nav>
+			    <nav>
 			    <div class="nav-wrapper">
 			      <form>
-			        <div class="input-field">
-			          <input id="search" type="search" required class="yellow">
+			        <div class="input-field byregion">
+			          <input id="regioninput" type="search" required class="yellow">
 			          <label for="search"><i class="material-icons">search</i></label>
 			          <i class="material-icons">close</i>
 			        </div>
 			      </form>
 			    </div>
 			  	</nav>
+		  	</div>
+			<div class="input-field col s6">
+	          	<nav>
+			    <div class="nav-wrapper">
+			      <form>
+			        <div class="input-field bycity">
+			          <input id="cityinput" type="search" required class="yellow">
+			          <label for="search"><i class="material-icons">search</i></label>
+			          <i class="material-icons">close</i>
+			        </div>
+			      </form>
+			    </div>
+			  	</nav>
+
 	        </div>
-	    </div>
+	     </div><!-- End of Second Input Row -->
+	        <div class="row"><!-- Submit Button -->
+	        	<div class="col">
+		        	<button class="btn waves-effect waves-light amber accent-4 submit" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+	        </div><!-- End Submit Button -->
+	   
+
 			<div class="row">
 			  	<!-- <form class="col s12"> -->
 	      		<!-- <div class="row"> -->
@@ -79,7 +104,7 @@
 			    <!-- </div> -->
 			    <!-- </form> -->
 			</div>
-		</div>
+		</div><!-- End of Container -->
 
 
 	
@@ -93,11 +118,11 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF1z4D8_qAlnNA6PDoT8UrYOjhajWyP1Y&callback=firstMap">
     </script>
  -->
-<!--  <script async defer
+ <script async defer
         src=
         "https://maps.googleapis.com/maps/api/js?key=AIzaSyAF1z4D8_qAlnNA6PDoT8UrYOjhajWyP1Y&callback=initMap">
     </script>
- -->
+
 	
 
 
