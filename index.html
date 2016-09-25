@@ -8,33 +8,34 @@
 	<!-- style link -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- jquery -->
-	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+	<!-- firebase -->
+  	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
 	<!-- materialize -->
 	<!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  	<!-- firebase -->
-  	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+  	<!-- material icons -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<!-- font  -->
+	<!-- Google font  -->
 	<link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Tangerine|Modak|Sigmar One">
     </head>
 <body>
 	<nav class="card-panel teal transparent header">
 	    <div class="nav-wrapper" id="headwraper">
-	      <a href="#" class="brand-logo hop">HoPLIvIoN
+	      <a href="#" class="brand-logo" style="color: #471f0a">HoPLIvIoN
 	     </a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">About</a></li>
-	        <li><a href="badges.html">Contact Us!</a></li>
+	        <li><a href="sass.html" style="color: #471f0a">About</a></li>
+	        <li><a href="badges.html" style="color: #471f0a">Contact Us!</a></li>
 	      </ul>
 	    </div>
 	</nav>
 	<div class="container">
-		<div class="row" id="map"></div>
 		<div class="carousel">
 		    <a class="carousel-item" href="#one!"><img class="img" src="http://www.iopp.org/images/IoPPNE-PIX/hp-featured-image.png"></a>
 		    <a class="carousel-item" href="#two!"><img class="img" src="http://www.chefalfredos.com/wp-content/uploads/2015/07/stellaartois-1.png"></a>
@@ -42,21 +43,30 @@
 		    <a class="carousel-item" href="#four!"><img class="img" src="http://worldartsme.com/images/blue-moon-beer-clipart-1.jpg"></a>
 		    <a class="carousel-item" href="#five!"><img class="img" src="http://www.brauunion.at/images/resized/assets/fileupload/biersorten/heineken%2Bglas_03_196x400.png"></a>
 	  	</div><br>
-	  	
-	
+		<div id="map"></div>  	
+
 		<br><div class="row">
 			<div class="input-field col l6"><br>
-			    <select>
+			    <select class="transparent">
 			      <option value="" disabled selected>Choose your option</option>
-			      <option value="region">Search by State</option>
-			      <option value="locality">By City</option>
+			      <option value="region" id="region">Search by State</option>
+			      <option value="locality" id="locality">By City</option>
 			      <!-- <option value="3"></option> -->
 			    </select>
-			    <label id="select">Select here Bro!!</label>
+			    <label id="bro">Select here!!</label>
 		  	</div>
 			<div class="input-field col s6">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Textarea</label>
+	          	<nav>
+			    <div class="nav-wrapper">
+			      <form>
+			        <div class="input-field">
+			          <input id="search" type="search" required class="yellow">
+			          <label for="search"><i class="material-icons">search</i></label>
+			          <i class="material-icons">close</i>
+			        </div>
+			      </form>
+			    </div>
+			  	</nav>
 	        </div>
 	    </div>
 			<div class="row">
@@ -71,16 +81,25 @@
 			</div>
 		</div>
 
+
 	
 
 <!-- Javascript -->
 <script src="css/app.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <!-- google api -->
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwEmSt21V19fqZZy03zjA1SXF5Ub3zT8g&v=3&callback=initMap">
-    </script> -->
+<!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF1z4D8_qAlnNA6PDoT8UrYOjhajWyP1Y&callback=firstMap">
+    </script>
+ -->
+ <script async defer
+        src=
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyAF1z4D8_qAlnNA6PDoT8UrYOjhajWyP1Y&callback=initMap">
+    </script>
+
 	
- 
-<!-- api keys AIzaSyBwEmSt21V19fqZZy03zjA1SXF5Ub3zT8g -->
+
 
 
 
