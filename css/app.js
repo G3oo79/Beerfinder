@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 
 });
+$("#map").hide();
 //firebase data
 var config = {
     apiKey: "AIzaSyDONv_jow4N-ruNrWSGfIdUuLKNkYy3wY4",
@@ -34,7 +35,22 @@ var database = firebase.database();
   alert("it works");
   var cityInput = $('#cityinput').val().trim(); 
   alert("yesss cityy");
+/*  var queryURL = "https://crossorigin.me/http://api.brewerydb.com/v2/locations/?key=9bebc0cee0d006506782667a99991706&" + cityState + "=" + where;
+*/
+  
+
+$("#regioninput").val("");
+$("#cityinput").val("");
+
+$("#map").show();
+$(".carousel").hide();
+
+
+
+return false;
  });
+
+ 
 
  
     
@@ -42,7 +58,6 @@ var database = firebase.database();
 
     
 //map style and start location
-$("#map").hide();
 var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
